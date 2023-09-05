@@ -2,26 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    /* Beige */
+    --beige-default: #e9edc9;
+    --beige-100: #3d4216;
+    --beige-200: #79842c;
+    --beige-300: #b3c146;
+    --beige-400: #ced788;
+    --beige-500: #e9edc9;
+    --beige-600: #edf1d4;
+    --beige-700: #f2f4df;
+    --beige-800: #f6f8ea;
+    --beige-900: #fbfbf4;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    /* Sea Green */
+    --sea-green-default: #5e8c61;
+    --sea-green-100: #131c13;
+    --sea-green-200: #263827;
+    --sea-green-300: #38543a;
+    --sea-green-400: #4b714e;
+    --sea-green-500: #5e8c61;
+    --sea-green-600: #7ba77e;
+    --sea-green-700: #9cbd9e;
+    --sea-green-800: #bdd3be;
+    --sea-green-900: #dee9df;
+
+    /* Feldgrau */
+    --feldgrau-default: #4e6151;
+    --feldgrau-100: #0f1310;
+    --feldgrau-200: #1f2620;
+    --feldgrau-300: #2e3a30;
+    --feldgrau-400: #3e4d40;
+    --feldgrau-500: #4e6151;
+    --feldgrau-600: #6b866f;
+    --feldgrau-700: #8fa592;
+    --feldgrau-800: #b4c3b6;
+    --feldgrau-900: #dae1db;
+
+    /* Van Dyke */
+    --van-dyke-default: #3b322c;
+    --van-dyke-100: #0c0a09;
+    --van-dyke-200: #171411;
+    --van-dyke-300: #231e1a;
+    --van-dyke-400: #2f2823;
+    --van-dyke-500: #3b322c;
+    --van-dyke-600: #6a594e;
+    --van-dyke-700: #978172;
+    --van-dyke-800: #baaba1;
+    --van-dyke-900: #dcd5d0;
+
+    /* Old Rose */
+    --old-rose-default: #c2847a;
+    --old-rose-100: #2b1714;
+    --old-rose-200: #572e28;
+    --old-rose-300: #82453c;
+    --old-rose-400: #ad5c50;
+    --old-rose-500: #c2847a;
+    --old-rose-600: #ce9c95;
+    --old-rose-700: #dab5af;
+    --old-rose-800: #e7ceca;
+    --old-rose-900: #f3e6e4;
+
+    /* Custom themes */
+    --dark: var(--van-dyke-500);
+    --light: var(--beige-500);
+    --lighter: var(--beige-300);
+    --accent: var(--old-rose-500);
+    --accent-active: var(--old-rose-600);
+    --accent-passive: var(--old-rose-400);
+    --success: var(--sea-green-500);
+    --error: var(--old-rose-800);
+  }
 }
