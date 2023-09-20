@@ -12,7 +12,7 @@ const Hero = () => {
           src="/beaver.jpg"
         />
         <p className="mb-4 leading-relaxed text- py-4">
-          <strong>Her kommer nettsiden til Bever'n,</strong> også kjent som
+          <strong>Her kommer nettsiden til Bever&apos;n,</strong> også kjent som
           Willy Fladby. Jeg elsker trær, men noen ganger må de fjernes eller
           beskjæres og da gjør jeg gjerne jobben for deg. Står treet vanskelig
           til kan jeg klatre opp og felle det bit for bit, og vil du at jeg
