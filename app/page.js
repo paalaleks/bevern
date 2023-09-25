@@ -14,13 +14,14 @@ export default async function Home() {
         <section className="pb-10 self-end">
           <div className="flex items-baseline pb-4">
             <Image
+              alt="beaver logo"
               src="/beaver.png"
               width={200}
               height={200}
               className="w-36 pl-4 mr-2 object-contain"
             />
             <h1 className="text-7xl h-16 text-beige-400 font-serif uppercase">
-              Bever'n
+              Bever&apos;n
             </h1>
           </div>
           <p className="leading-relaxed text-lg px-10">
@@ -36,9 +37,10 @@ export default async function Home() {
         <section className="group z-10 relative px-10">
           <div className="grid grid-cols-2 sm:grid-cols-4 group-hover:brightness-105 cursor-pointer transition duration-300 ease-in-out">
             {firstFourPosts.map((post) => {
-              console.log(post.cover.external.url);
               return (
                 <Image
+                  alt="jobb logg bilder"
+                  key={post.id}
                   src={post.cover.external.url}
                   height={650}
                   width={650}

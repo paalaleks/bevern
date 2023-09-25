@@ -10,9 +10,10 @@ export default function JobbloggGalleri() {
     <div className="flex justify-center flex-col group">
       <div className="grid sm:grid-cols-2 group-hover:brightness-105 cursor-pointer transition duration-300 ease-in-out">
         {firstFourPosts.map((post) => {
-          console.log(post.cover.external.url);
           return (
             <Image
+              alt="Bilde fra jobblogg"
+              key={post.id}
               src={post.cover.external.url}
               height={650}
               width={650}
