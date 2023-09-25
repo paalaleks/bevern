@@ -2,16 +2,17 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="bg-opacity-90 bg-beige-500 mx-auto">
-      <div className="flex flex-col justify-evenly items-center min-h-screen px-4 bg-beige-300 max-w-lg mx-auto">
-        <Image
-          width={596}
-          height={671}
-          class="max-w-lg w-full max-h-fit h-full"
-          alt="hero"
-          src="/beaver.jpg"
-        />
-        <p className="mb-4 leading-relaxed text- py-4">
+    <div className="min-h-screen grid">
+      {/* <Image
+        width={596}
+        height={671}
+        class="w-full mx-auto object-contain max-h-fit h-full"
+        alt="hero"
+        src="/beaver.jpg"
+      /> */}
+      <div className="px-12 sm:px-6 lg:px-8 self-center">
+        <div className="h-10"></div>
+        <p className="leading-relaxed text-lg">
           <strong>Her kommer nettsiden til Bever&apos;n,</strong> også kjent som
           Willy Fladby. Jeg elsker trær, men noen ganger må de fjernes eller
           beskjæres og da gjør jeg gjerne jobben for deg. Står treet vanskelig
@@ -25,7 +26,7 @@ const Hero = () => {
           vi en avtale!
         </p>
       </div>
-    </section>
+    </div>
   );
 };
 

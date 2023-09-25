@@ -73,6 +73,10 @@ module.exports = {
   ],
 
   theme: {
+    fontFamily: {
+      sans: ['var(--font-jakartaSans)'],
+      serif: ['var(--font-mogra)'],
+    },
     extend: {
       colors: {
         ...customColors,
