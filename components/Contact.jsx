@@ -40,22 +40,17 @@ const Contact = () => {
 
   return (
     <section className="px-4 relative z-10 self-center">
-      <div className="grid grid-cols-1 gap-x-4 gap-y-8 lg:grid-cols-5 max-w-4xl lg:max-w-screen-lg mx-auto self-center bg-feldgrau-300 shadow-lg p-4 rounded-lg">
-        <div className="lg:col-span-2 lg:py-12">
-          <h2 className="text-4xl text-beige-400 font-serif pt-2">
-            Ta kontakt!
-          </h2>
-          <p className=" text-lg text-color2">
+      <div className="grid place-content-center grid-cols-1 gap-y-8 lg:grid-cols-5 lg:max-w-screen-lg self-center bg-feldgrau-300 shadow-lg py-12 rounded-lg max-w-2xl mx-auto">
+        <div className="lg:col-span-2 pl-8 pr-4 md:px-10 self-center">
+          <h2 className="text-4xl text-beige-400 font-serif ">Ta kontakt!</h2>
+          <p className=" text-lg ">
             Jeg er bosatt i Trysil, men kan ta på meg oppdrag over hele
             Innlandet. Forsikret gjennom gjensidige. Org.nr. 930775096 Ta
             kontakt, så lager vi en avtale!
           </p>
 
-          <div className="mt-10 text-color2">
-            <Link
-              href={`tel:97412054`}
-              className="text-2xl font-bold text-color2"
-            >
+          <div className="mt-10 ">
+            <Link href={`tel:97412054`} className="text-2xl font-bold ">
               +47 974 12 054
             </Link>
 
@@ -64,7 +59,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="rounded-lg lg:col-span-3 lg:p-12">
+        <div className=" lg:col-span-3 lg:pl-4 lg:pr-8 px-8">
           <form className="space-y-2" onSubmit={handleSubmit(onSubmit)}>
             <div>
               <label className="sr-only" htmlFor="name">
@@ -136,7 +131,7 @@ const Contact = () => {
             <div className="pt-2 pb-2">
               <button
                 type="submit"
-                className="group flex w-full justify-center items-center rounded-lg bg-feldgrau-500 bg-opacity-80 shadow px-5 py-3 transition duration-300 ease-in-out focus:outline-none hover:bg-opacity-100 text-beige-400"
+                className="group flex w-full justify-center items-center rounded-lg bg-sea_green-500 bg-opacity-80 shadow px-5 py-3 transition duration-300 ease-in-out focus:outline-none hover:bg-opacity-100 text-beige-400"
               >
                 {isSubmitting ? (
                   <div
@@ -145,7 +140,7 @@ const Contact = () => {
                   >
                     <svg
                       aria-hidden="true"
-                      className="inline w-5 h-5 text-color2 animate-spin dark:text-dutch_white-700 fill-hunyadi_yellow-300"
+                      className="inline w-5 h-5  animate-spin dark:text-dutch_white-700 fill-hunyadi_yellow-300"
                       viewBox="0 0 100 101"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
