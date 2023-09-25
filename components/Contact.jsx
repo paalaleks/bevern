@@ -39,10 +39,12 @@ const Contact = () => {
   }
 
   return (
-    <section className="px-4 relative z-10 self-center">
+    <section className="px-4 relative z-10 pb-28 sm:pb-40 ">
       <div className="grid place-content-center grid-cols-1 gap-y-8 lg:grid-cols-5 lg:max-w-screen-lg self-center bg-feldgrau-300 shadow-lg py-12 rounded-lg max-w-2xl mx-auto">
         <div className="lg:col-span-2 pl-8 pr-4 md:px-10 self-center">
-          <h2 className="text-4xl text-beige-400 font-serif ">Ta kontakt!</h2>
+          <h2 className="text-3xl sm:text-4xl text-beige-400 font-serif ">
+            Ta kontakt!
+          </h2>
           <p className=" text-lg ">
             Jeg er bosatt i Trysil, men kan ta på meg oppdrag over hele
             Innlandet. Forsikret gjennom gjensidige. Org.nr. 930775096 Ta
@@ -131,7 +133,7 @@ const Contact = () => {
             <div className="pt-2 pb-2">
               <button
                 type="submit"
-                className="group flex w-full justify-center items-center rounded-lg bg-sea_green-500 bg-opacity-80 shadow px-5 py-3 transition duration-300 ease-in-out focus:outline-none hover:bg-opacity-100 text-beige-400"
+                className="group flex w-full justify-center items-center rounded-lg bg-feldgrau bg-opacity-80 shadow px-5 py-3 transition duration-300 ease-in-out focus:outline-none hover:bg-opacity-100 text-beige-400"
               >
                 {isSubmitting ? (
                   <div

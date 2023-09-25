@@ -10,8 +10,8 @@ export default async function Home() {
   const firstFourPosts = postList.results.slice(0, 4);
   return (
     <>
-      <div className="fixed z-0 right-0 bg-[url('/treeclimber_green.png')] min-h-screen w-[633px] bg-no-repeat bg-right opacity-30" />
-      <main className="grid grid-rows-2 relative">
+      <div className="fixed z-0 right-0 bg-[url('/treeclimber_green.png')] min-h-screen w-[633px] bg-no-repeat bg-right opacity-50" />
+      <main className="grid grid-flow-row relative">
         <div className="relative z-10 min-h-screen grid grid-flow-row max-w-4xl w-full mx-auto ">
           <section className="self-end max-w-2xl mx-auto rounded-2xl">
             <div className="flex justify-start items-baseline pt-6 pb-3 flex-wrap px-6">
@@ -26,7 +26,7 @@ export default async function Home() {
                 Bever&apos;n
               </h1>
             </div>
-            <p className="leading-relaxed text-lg px-10 pb-2">
+            <p className="leading-relaxed text-lg px-5 sm:px-10 pb-2">
               Jeg heter <strong>Willy Fladby</strong> og jeg elsker trær, men
               noen ganger må de fjernes eller beskjæres, og da gjør jeg gjerne
               jobben for deg. Står treet vanskelig til kan jeg klatre opp og
@@ -37,7 +37,7 @@ export default async function Home() {
               av, tar jeg gjerne en kreativ prat om det.
             </p>
           </section>
-          <section className="group  z-10 relative px-10 pt-8 self-end sm:self-start">
+          <section className="group z-10 relative pt-8 self-end sm:self-start">
             <div className="grid grid-cols-2 sm:grid-cols-4 group-hover:brightness-105 cursor-pointer transition duration-300 ease-in-out shadow-sm">
               {firstFourPosts.map((post) => {
                 return (
@@ -53,7 +53,7 @@ export default async function Home() {
               })}
             </div>
             <div className="flex justify-center py-8">
-              <button className="text-4xl font-serif text-beige-400 ">
+              <button className="text-3xl sm:text-4xl font-serif text-beige-400 ">
                 Gå til jobb logg{' '}
                 <LuArrowRight className="inline-block group-hover:animate-arrow ml-1 font-serif" />
               </button>
