@@ -90,4 +90,7 @@
   .animate-arrow {
     animation: moveArrow 500ms;
   }
+  .paddingX {
+    @apply px-10;
+  }
 }

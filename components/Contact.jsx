@@ -4,7 +4,6 @@ import { FaCheck, FaEnvelope } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import Link from 'next/link';
-import Footer from './Footer';
 
 const Contact = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -40,10 +39,12 @@ const Contact = () => {
   }
 
   return (
-    <section className="px-10 relative z-10 self-center">
-      <div className="grid grid-cols-1 gap-x-4 gap-y-8 lg:grid-cols-5 max-w-4xl lg:max-w-screen-lg mx-auto self-center bg-feldgrau-300 shadow-lg p-8 rounded-lg">
+    <section className="px-4 relative z-10 self-center">
+      <div className="grid grid-cols-1 gap-x-4 gap-y-8 lg:grid-cols-5 max-w-4xl lg:max-w-screen-lg mx-auto self-center bg-feldgrau-300 shadow-lg p-4 rounded-lg">
         <div className="lg:col-span-2 lg:py-12">
-          <h2 className="text-4xl text-beige-400 font-serif">Ta kontakt!</h2>
+          <h2 className="text-4xl text-beige-400 font-serif pt-2">
+            Ta kontakt!
+          </h2>
           <p className=" text-lg text-color2">
             Jeg er bosatt i Trysil, men kan ta på meg oppdrag over hele
             Innlandet. Forsikret gjennom gjensidige. Org.nr. 930775096 Ta
