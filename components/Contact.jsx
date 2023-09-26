@@ -39,7 +39,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="px-4 relative z-10 pb-28 sm:pb-40 ">
+    <section className="px-4 relative z-10 pb-24 sm:pb-40 ">
       <div className="grid place-content-center grid-cols-1 gap-y-8 lg:grid-cols-5 lg:max-w-screen-lg self-center bg-feldgrau-300 shadow-lg py-12 rounded-lg max-w-2xl mx-auto">
         <div className="lg:col-span-2 pl-8 pr-4 md:px-10 self-center">
           <h2 className="text-3xl sm:text-4xl text-beige-400 font-serif ">

@@ -14,7 +14,7 @@ export default async function Home() {
       <main className="grid grid-flow-row relative">
         <div className="relative z-10 min-h-screen grid grid-flow-row max-w-4xl w-full mx-auto ">
           <section className="self-end max-w-2xl mx-auto rounded-2xl">
-            <div className="flex justify-start items-baseline pt-6 pb-3 flex-wrap px-6">
+            <div className="flex justify-start items-baseline pt-8 pb-3 flex-wrap px-6">
               <Image
                 alt="beaver logo"
                 src="/beaver.png"
@@ -26,7 +26,7 @@ export default async function Home() {
                 Bever&apos;n
               </h1>
             </div>
-            <p className="leading-relaxed text-lg px-5 sm:px-10 pb-2">
+            <p className="leading-relaxed text-lg px-5 sm:px-10">
               Jeg heter <strong>Willy Fladby</strong> og jeg elsker trær, men
               noen ganger må de fjernes eller beskjæres, og da gjør jeg gjerne
               jobben for deg. Står treet vanskelig til kan jeg klatre opp og
