@@ -21,8 +21,9 @@ export default async function page() {
         <div className="grid grid-cols-2 gap-4">
           {postList.results.map((post) => {
             return (
-              <div>
+              <div key={post.id}>
                 <Image
+                  alt={post.properties.Name.title[0].plain_text}
                   src={post.cover.file.url}
                   width={500}
                   height={500}
