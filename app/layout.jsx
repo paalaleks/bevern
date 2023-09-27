@@ -17,15 +17,15 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: `Bevern's - Willy Fladby`,
+  title: `Bever'n - Willy Fladby`,
   description: `Bevern's nettside. Kontakt meg og se på prosjektene mine.`,
   image: '/treeclimber_green.png',
 
-  ogSiteName: `Bevern's - Willy Fladby`,
+  ogSiteName: `Bever'n - Willy Fladby`,
   ogLanguage: `no_NO`,
   ogUrl: `https://bevern.no`,
   ogTitle: `Bevern's - Willy Fladby`,
-  ogDescription: `Bever's nettside. Kontakt meg og se på prosjektene mine.`,
+  ogDescription: `Bevern's nettside. Kontakt meg og se på prosjektene mine.`,
   ogImage: '/treeclimber_green.png',
 };
 
