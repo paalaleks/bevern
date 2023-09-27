@@ -20,6 +20,12 @@ export const metadata = {
   title: `Bever'n - Willy Fladby`,
   description: `Bevern's nettside. Kontakt meg og se på prosjektene mine.`,
   image: '/treeclimber_green.png',
+
+  openGraph: {
+    title: `Bever'n - Willy Fladby`,
+    description: `Bevern's nettside. Kontakt meg og se på prosjektene mine.`,
+    image: '/treeclimber_green.png',
+  },
 };
 
 export default function RootLayout({ children }) {
