@@ -20,13 +20,6 @@ export const metadata = {
   title: `Bever'n - Willy Fladby`,
   description: `Bevern's nettside. Kontakt meg og se på prosjektene mine.`,
   image: '/treeclimber_green.png',
-
-  ogSiteName: `Bever'n - Willy Fladby`,
-  ogLanguage: `no_NO`,
-  ogUrl: `https://bevern.no`,
-  ogTitle: `Bevern's - Willy Fladby`,
-  ogDescription: `Bevern's nettside. Kontakt meg og se på prosjektene mine.`,
-  ogImage: '/treeclimber_green.png',
 };
 
 export default function RootLayout({ children }) {
