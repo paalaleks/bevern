@@ -27,7 +27,7 @@ export default async function page() {
                   src={post.cover.file.url}
                   width={500}
                   height={500}
-                  className="h-full max-h-72 object-cover rounded-xl"
+                  className="h-72 object-cover rounded-xl"
                 />
                 <h2 className="font-serif text-xl pt-2">
                   {post.properties.Name.title[0].plain_text}
