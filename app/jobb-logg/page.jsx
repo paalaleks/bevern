@@ -18,7 +18,7 @@ export default async function page() {
         <span className="font-serif">Tilbake</span>
       </Link>
       <div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {postList.results.map((post) => {
             return (
               <div key={post.id}>
@@ -29,10 +29,12 @@ export default async function page() {
                   height={500}
                   className="h-full max-h-72 object-cover rounded-xl"
                 />
-                <h2 className="font-serif text-xl mt-1">
+                <h2 className="font-serif text-xl pt-2">
                   {post.properties.Name.title[0].plain_text}
                 </h2>
-                <p>{post.properties.Description.rich_text[0].plain_text}</p>
+                <p className="pb-1">
+                  {post.properties.Description.rich_text[0].plain_text}
+                </p>
               </div>
             );
           })}
