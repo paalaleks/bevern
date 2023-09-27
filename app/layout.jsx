@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} ${mogra.variable} ${jakartaSans.variable}  bg-sea_green-300 text-beige font-sans`}
       >
+        <div className="fixed z-0 right-0 bg-[url('/treeclimber_green.png')] min-h-screen w-[633px] bg-no-repeat bg-right opacity-50" />
         {children}
       </body>
     </html>
