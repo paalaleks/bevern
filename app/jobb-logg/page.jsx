@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { FaArrowLeft } from 'react-icons/fa';
-import { fetchPages } from '@/lib/notion';
-import { notFound } from 'next/navigation';
-import Image from 'next/image';
+import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
+import { fetchPages } from "@/lib/notion";
+import { notFound } from "next/navigation";
+import Image from "next/image";
 
 export default async function page() {
   const postList = await fetchPages();
@@ -19,25 +19,26 @@ export default async function page() {
       </Link>
       <div>
         <div className="grid sm:grid-cols-2 gap-4">
-          {postList.results.map((post) => {
-            return (
-              <div key={post.id}>
-                <Image
-                  alt={post.properties.Name.title[0].plain_text}
-                  src={post.cover.file.url}
-                  width={500}
-                  height={500}
-                  className="h-72 object-cover rounded-xl"
-                />
-                <h2 className="font-serif text-xl pt-2">
-                  {post.properties.Name.title[0].plain_text}
-                </h2>
-                <p className="pb-1">
-                  {post.properties.Description.rich_text[0].plain_text}
-                </p>
-              </div>
-            );
-          })}
+          {postList.results &&
+            postList.results.map((post) => {
+              return (
+                <div key={post.id}>
+                  <Image
+                    alt={post.properties.Name.title[0].plain_text}
+                    src={post.cover.external.url}
+                    width={500}
+                    height={500}
+                    className="h-72 object-cover rounded-xl"
+                  />
+                  <h2 className="font-serif text-xl pt-2">
+                    {post.properties.Name.title[0]?.plain_text}
+                  </h2>
+                  <p className="pb-1">
+                    {post.properties.Description.rich_text[0]?.plain_text}
+                  </p>
+                </div>
+              );
+            })}
         </div>
       </div>
     </section>
