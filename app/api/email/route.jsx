@@ -1,15 +1,21 @@
-import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(request) {
   const { email, name, phone, subject, message } = await request.json();
 
   const transport = nodemailer.createTransport({
-    service: 'gmail',
+    service: "gmail",
+    port: 465,
+    secure: true,
+    logger: true,
+    debug: true,
+    secureConnection: false,
     auth: {
       user: process.env.MY_EMAIL,
       pass: process.env.MY_PASSWORD,
     },
+    tls: { rejectUnauthorized: true },
   });
 
   const mailOptions = {
@@ -20,7 +26,7 @@ export async function POST(request) {
     text: `
     Name: ${name} ,
     Email: ${email} ,
-    Phone: ${phone || 'empty'} , 
+    Phone: ${phone || "empty"} , 
     Message: ${message}
     `,
   };
@@ -29,7 +35,7 @@ export async function POST(request) {
     new Promise((resolve, reject) => {
       transport.sendMail(mailOptions, function (err) {
         if (!err) {
-          resolve('Email sent');
+          resolve("Email sent");
         } else {
           reject(err.message);
         }
@@ -38,7 +44,7 @@ export async function POST(request) {
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ message: 'Email sent' });
+    return NextResponse.json({ message: "Email sent" });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }
